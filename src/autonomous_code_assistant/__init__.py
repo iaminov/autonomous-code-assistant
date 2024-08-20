@@ -11,11 +11,13 @@ __email__ = "alexeaminov@gmail.com"
 
 from .core import CodeAssistant
 from .exceptions import CodeAssistantError, LLMProviderError, FileOperationError
+from .providers.base import CodeContext
 
 __all__ = [
     "CodeAssistant",
     "CodeAssistantError", 
     "LLMProviderError",
     "FileOperationError",
+    "CodeContext",
     "__version__",
 ]
